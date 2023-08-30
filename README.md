@@ -31,7 +31,7 @@ This Polling API allows users to create questions, add options to questions, add
 ## Folder Structure
 
 <pre>
-```
+
 polling-api/
 |-- connection/
 |   |-- db.connection.js
@@ -47,7 +47,8 @@ polling-api/
 |-- index.js
 |-- package.json
 |-- README.md
-```
+
+  
 </pre>
 
 ## API Response Codes
