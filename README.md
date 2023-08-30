@@ -7,7 +7,7 @@ A simple API for creating and managing polls.
 - [Features](#features)
 - [Setup Instructions](#setup-instructions)
 - [Folder Structure](#folder-structure)
-- [API Response Codes](#api-response-codes)
+- [API Endpoints](#api-endpoints)
 - [Dependencies](#dependencies)
 - [Contributing](#contributing)
 - [License](#license)
