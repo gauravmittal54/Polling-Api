@@ -51,12 +51,17 @@ polling-api/
   
 </pre>
 
-## API Response Codes
-- 200: Success. The request was successful and the operation was completed.
-- 400: Bad Request. The request was malformed or had invalid parameters.
-- 404: Not Found. The requested resource was not found.
-- 405: Method Not Allowed. The HTTP method used is not allowed for the requested endpoint.
-- 500: Internal Server Error. An unexpected error occurred on the server.
+## API Endpoints
+
+| HTTP Verb | Endpoint                               | Action                                              |
+| --------- | -------------------------------------- | --------------------------------------------------- |
+| POST      | /questions/create                      | Create a new question                              |
+| POST      | /questions/:id/options/create          | Add options to a specific question                 |
+| DELETE    | /questions/:id/delete                  | Delete a question                                  |
+| DELETE    | /options/:id/delete                    | Delete an option                                   |
+| PUT       | /options/:id/add_vote                  | Increase the count of votes for an option          |
+| GET       | /questions/:id                         | View a question and its options                    |
+
 
 ## Dependencies
 - express: ^4.18.2
