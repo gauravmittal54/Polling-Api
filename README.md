@@ -16,20 +16,22 @@ A simple API for creating and managing polls.
 This Polling API allows users to create questions, add options to questions, add votes to options, delete questions and options, and view questions with their options and vote counts.
 
 ## Features
-> Create a question
-> Add options to a question
-> Add votes to options
-> Delete a question (and associated options)
-> Delete an option
-> View a question with its options and vote counts
+- Create a question
+- Add options to a question
+- Add votes to options
+- Delete a question (and associated options)
+- Delete an option
+- View a question with its options and vote counts
 
 ## Setup Instructions
-> Clone the repository.
-> Install the dependencies using npm install.
-> Start the server using npm start or npm run dev (for development with nodemon).
+- Clone the repository.
+- Install the dependencies using npm install.
+- Start the server using npm start or npm run dev (for development with nodemon).
 
 ## Folder Structure
 
+<pre>
+```
 polling-api/
 |-- connection/
 |   |-- db.connection.js
@@ -45,6 +47,8 @@ polling-api/
 |-- index.js
 |-- package.json
 |-- README.md
+```
+</pre>
 
 ## API Response Codes
 - 200: Success. The request was successful and the operation was completed.
