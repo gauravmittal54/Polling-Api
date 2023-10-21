@@ -12,6 +12,9 @@ A simple API for creating and managing polls.
 - [Contributing](#contributing)
 - [License](#license)
 
+  ![image](https://github.com/gauravmittal54/Polling-Api/assets/61792468/0f2518e0-27bd-4f5d-8aaa-161e8e024e46)
+
+
 ## Description
 This Polling API allows users to create questions, add options to questions, add votes to options, delete questions and options, and view questions with their options and vote counts.
 
