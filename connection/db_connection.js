@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-mongoose.connect("mongodb://mongo:eTxTs2Gco5NuuyGTQkJ0@containers-us-west-186.railway.app:6104", {
+mongoose.connect("process.env.MONGO_URL", {
 }).then(() => {
     console.log("Connection is successful");
 }).catch((e) => {
