@@ -5,6 +5,7 @@ A simple API for creating and managing polls.
 
 - [Description](#description)
 - [Features](#features)
+- [Swagger-Doc](#swagger-Doc)
 - [Setup Instructions](#setup-instructions)
 - [Folder Structure](#folder-structure)
 - [API Endpoints](#api-endpoints)
@@ -12,7 +13,7 @@ A simple API for creating and managing polls.
 - [Contributing](#contributing)
 - [License](#license)
 
-  ![image](https://github.com/gauravmittal54/Polling-Api/assets/61792468/0f2518e0-27bd-4f5d-8aaa-161e8e024e46)
+
 
 
 ## Description
@@ -25,6 +26,12 @@ This Polling API allows users to create questions, add options to questions, add
 - Delete a question (and associated options)
 - Delete an option
 - View a question with its options and vote counts
+
+## Swagger Doc
+![image](https://github.com/gauravmittal54/Polling-Api/assets/61792468/d490c13c-edc9-44ed-ac45-d5c614439dbd)
+![image](https://github.com/gauravmittal54/Polling-Api/assets/61792468/fdcd5680-d6d6-4f5f-ae95-1e0e9989a773)
+
+
 
 ## Setup Instructions
 - Clone the repository.
