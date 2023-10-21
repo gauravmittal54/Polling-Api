@@ -23,7 +23,7 @@ const Option = require('../models/Option');
  *               title:
  *                 type: string
  *             example:
- *               title: "Who is your favorite actor?"
+ *               title: "Whom are you voting for this year?"
  *     responses:
  *       200:
  *         description: Question created successfully.
