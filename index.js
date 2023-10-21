@@ -11,7 +11,7 @@ const cors = require('cors');
 const app = express();
 app.use(cors());
 const port = process.env.PORT || 8000;
-const serverUrl = process.env.SERVER_URL || `http://localhost:${port}`;
+const serverUrl = process.env.SERVER_URL || `https://polling-api-production-8f3b.up.railway.app`;
 
 app.use(express.json());
 
