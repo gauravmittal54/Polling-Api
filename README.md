@@ -74,10 +74,12 @@ polling-api/
 
 
 ## Dependencies
-- express: ^4.18.2
-- mongoose: ^7.4.5
-- nodemon: ^3.0.1
-- validator: ^13.11.0
+- express: 4.18.2
+- mongoose: 7.4.5
+- nodemon: 3.0.1
+- validator: 13.11.0
+- swagger-jsdoc: 6.2.8,
+- swagger-ui-express: 5.0.0
 
 ## Contributing
 Contributions are welcome! Feel free to open issues or submit pull requests.
