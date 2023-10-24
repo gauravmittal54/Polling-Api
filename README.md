@@ -54,6 +54,8 @@ polling-api/
 |-- routes/
 |   |-- optionroutes.js
 |   |-- questionroutes.js
+|-- swaggerUi/
+    |-- swaggerConfig.js
 |-- index.js
 |-- package.json
 |-- README.md
