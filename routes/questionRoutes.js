@@ -23,7 +23,7 @@ const Option = require('../models/Option');
  *               title:
  *                 type: string
  *             example:
- *               title: "Whom do you vote this year?"
+ *               title: "Who is your favorite actor?"
  *     responses:
  *       200:
  *         description: Question created successfully.
@@ -60,7 +60,7 @@ router.post('/create', questionController.createQuestion);
  *               text:
  *                 type: string
  *             example:
- *               text: "Bharatiya Janata Party (BJP)"
+ *               text: "SRK : Shah Rukh Khan"
  *     responses:
  *       200:
  *         description: Option added to the question successfully.
