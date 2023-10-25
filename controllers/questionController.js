@@ -12,7 +12,7 @@ exports.createQuestion = async (req, res) => {
     return res.json({ success: true, message: 'Question created', question: newQuestion });
   } catch (error) {
     console.error(error);
-    return res.status(500).json({ success: false, message: 'Internal server error' });
+    return res.status(500).json({ success: false, message: `Internal server error ${error}` });
   }
 };
 
