@@ -6,13 +6,23 @@ exports.createQuestion = async (req, res) => {
   try {
     const { title } = req.body;
 
+    // Check if a question with the same title already exists
+    const existingQuestion = await Question.findOne({ title });
+
+    if (existingQuestion) {
+      return res.status(400).json({
+        message: 'A question with the same text had already been created.',
+      });
+    }
+
+    // If no existing question found, create and save the new question
     const newQuestion = new Question({ title });
     await newQuestion.save();
 
     return res.json({ success: true, message: 'Question created', question: newQuestion });
   } catch (error) {
     console.error(error);
-    return res.status(500).json({ success: false, message: `Internal server error ${error}` });
+    return res.status(500).json({ success: false, message: 'Internal server error' });
   }
 };
 
