@@ -6,11 +6,19 @@ exports.createQuestion = async (req, res) => {
   try {
     const { title } = req.body;
 
+    if (!title) {
+      return res.status(400).json({
+        success: false,
+        message: 'Blank question cannot be created',
+      });
+    }
+
     // Check if a question with the same title already exists
     const existingQuestion = await Question.findOne({ title });
 
     if (existingQuestion) {
       return res.status(400).json({
+        success: false,
         message: 'A question with the same text had already been created.',
       });
     }
@@ -33,7 +41,8 @@ exports.addOptions = async (req, res) => {
     const {text} = req.body;
 
     if (!text) {
-      return res.status(404).json({
+      return res.status(404).json
+        success: false,
         message: 'text required for creating option',
       });
     }
@@ -42,6 +51,7 @@ exports.addOptions = async (req, res) => {
 
     if (!question) {
       return res.status(404).json({
+        success: false,
         message: 'question not found!',
       });
     }
@@ -50,6 +60,7 @@ exports.addOptions = async (req, res) => {
 
     if (existingOption) {
       return res.status(400).json({
+        success: false,
         message: 'An option with the same text already exists for this question.',
       });
     }
