@@ -41,7 +41,7 @@ exports.addOptions = async (req, res) => {
     const {text} = req.body;
 
     if (!text) {
-      return res.status(404).json
+      return res.status(404).json({
         success: false,
         message: 'text required for creating option',
       });
