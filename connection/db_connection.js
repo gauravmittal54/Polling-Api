@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-mongoose.connect("process.env.MONGO_URL", {
+mongoose.connect("mongodb+srv://gauravmittal54:Gaurav%402001@cluster0.chlvztj.mongodb.net/polling-api", {
 }).then(() => {
     console.log("Connection is successful");
 }).catch((e) => {
