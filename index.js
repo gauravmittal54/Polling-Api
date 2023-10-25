@@ -11,66 +11,11 @@ const cors = require('cors');
 const app = express();
 app.use(cors());
 const port = process.env.PORT || 8000;
-const serverUrl = process.env.SERVER_URL || `http://localhost:${port}`;
+global.serverUrl = process.env.SERVER_URL || `http://localhost:${port}`;
 
 app.use(express.json());
 
-
-const options = {
-    definition: {
-        openapi: '3.0.0',
-        info: {
-            title: 'Polling-Api',
-            version: '1.0.0'
-        },
-        servers: [
-            {
-                url: serverUrl,
-            },
-        ],
-        components: {
-            schemas: {
-                Option: {
-                    type: 'object',
-                    properties: {
-                        text: {
-                            type: 'string'
-                        },
-                        votes: {
-                            type: 'integer'
-                        },
-                        link_to_vote: {
-                            type: 'string'
-                        },
-                        question_id: {
-                            type: 'string',
-                            format: 'uuid'
-                        }
-                    },
-                    required: ['text', 'votes', 'question_id']
-                },
-                Question: {
-                    type: 'object',
-                    properties: {
-                        title: {
-                            type: 'string'
-                        },
-                        options: {
-                            type: 'array',
-                            items: {
-                                $ref: '#/components/schemas/Option'
-                            }
-                        }
-                    },
-                    required: ['title']
-                }
-            }
-        }
-    },
-    apis: ['./routes/*']
-};
-
-const swaggerSpec = swaggerJSDoc(options);
+const swaggerSpec = require('./swaggerUi/swaggerConfig');
 
 // Use the routes
 app.use('/questions', questionRoutes);
