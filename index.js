@@ -11,7 +11,7 @@ const cors = require('cors');
 const app = express();
 app.use(cors());
 const port = process.env.PORT || 8000;
-const serverUrl = process.env.SERVER_URL || `https://smooth-throat-production.up.railway.app`;
+const serverUrl = process.env.SERVER_URL || `http://localhost:8000`;
 
 app.use(express.json());
 
