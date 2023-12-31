@@ -1,6 +1,6 @@
 ## Polling API
 A simple API for creating and managing polls.
-Hosted url : https://smooth-throat-production.up.railway.app/
+Hosted url : [Link](https://polling-api-production-c0ba.up.railway.app/)
 
 ## Table of Contents
 
